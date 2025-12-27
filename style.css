@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(#0b0f1a, #1b2735);
+    font-family: "Georgia", serif;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#container {
+    max-width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 6vw;
+    margin-bottom: 10px;
+}
+
+#poem {
+    font-size: 3.8vw; /* уменьшено, чтобы всё влезло */
+    line-height: 1.25;
+    white-space: pre-line;
+}
+
+/* Снежинки */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 12px;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+        opacity: 0.2;
+    }
+}
